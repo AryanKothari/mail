@@ -1,0 +1,9 @@
+textarea {
+    min-height: 400px;
+}
+
+#email-block {
+    margin: 10px;
+    margin-right: 70px;
+    border:1px solid black;
+}
