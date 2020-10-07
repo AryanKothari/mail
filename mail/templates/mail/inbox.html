@@ -16,13 +16,16 @@
     </div>
 
     <div id="email-view">
-        <ul class="list-group">
-            <li id="timestamp" class="list-group-item"> </li>
-            <li id="sender" class="list-group-item"> </li>
-            <li id="recipients" class="list-group-item"> </li>
-            <li id="subject" class="list-group-item"> </li>
-            <li id="body" class="list-group-item"> </li>
-          </ul>
+    <p id="sender" style="font-size: small;"></p> </p>
+    <p id="recipients" style="font-size: small;"></p> </p>
+    <p id="subject" style="font-size: small;"></p></p>
+    <p id="timestamp" style="font-size: small;"> </p>
+    <br>
+    <button id="archive" class="btn btn-sm btn-outline-primary">Archive</button> 
+    <button id="unarchive" class="btn btn-sm btn-outline-primary">Unarchive</button>
+    <button id="reply" class="btn btn-sm btn-outline-primary" style="margin-left: 85px; margin-top: -30.5px;">Reply</button>
+    <hr>
+    <p id="body" style="font-size: small;"> </p>
     </div>
 
     <div id="compose-view">
@@ -35,14 +38,14 @@
                 To: <input id="compose-recipients" class="form-control" placeholder="john.doe@gmail.com" required=True>
             </div>
             <div class="form-group">
-                <input class="form-control" id="compose-subject" placeholder="Subject" required=True>
+                Subject: <input class="form-control" id="compose-subject" placeholder="Subject" required=True>
             </div>
-            <textarea class="form-control" id="compose-body" placeholder="Body" required=True></textarea> <br>
-            <input type="submit" class="btn btn-primary"/>
+            <textarea class="form-control" id="compose-body" required=True></textarea> <br>
+            <input type="submit" value="Send" class="btn btn-primary"/>
         </form>
     </div>
 {% endblock %}
 
 {% block script %}
-    <script src="{% static 'mail/inbox.js' %}?v=00040"></script>
+    <script src="{% static 'mail/inbo.js' %}?v=00102"></script>
 {% endblock %}
